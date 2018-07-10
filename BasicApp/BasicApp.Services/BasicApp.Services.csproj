@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DTOs\Label.cs~RF161ddaa1.TMP" />
+    <None Remove="Handlers\ToDoCommandHandler.cs~RFdea518d.TMP" />
+    <None Remove="Handlers\ToDoQueryHandler.cs~RF16a3761f.TMP" />
+    <None Remove="Implementation\CommandProcessor.cs~RFfd9f2a7.TMP" />
+    <None Remove="Implementation\ToDoQueryProcessor.cs~RFfe652af.TMP" />
+    <None Remove="UnitOfWork\IRepository.cs~RF48991f0.TMP" />
+    <None Remove="UnitOfWork\Repository.cs~RF492b395.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasicApp.DataAccess\BasicApp.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
